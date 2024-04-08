@@ -98,7 +98,7 @@ function makeSwiftCommand(
   parameters: RequestParameters,
 ): Deno.Command {
   const command = parameters.command || "swift";
-  const options = parameters.options || "";
+  const options = parameters.options || "-enable-bare-slash-regex";
   const timeout = parameters.timeout || 60;
   const color = parameters._color || false;
   const env = color
