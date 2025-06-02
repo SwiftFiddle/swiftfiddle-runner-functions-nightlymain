@@ -11,6 +11,8 @@ on:
 
   # Allow manual trigger
   workflow_dispatch:
+  schedule:
+    - cron: "42 19 * * *"
 
 jobs:
   build-and-deploy:
